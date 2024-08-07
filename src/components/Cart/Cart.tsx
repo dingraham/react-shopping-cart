@@ -15,6 +15,7 @@ const taxValue = 1.99;
 
 
 
+
 const handlingValue = 2.33;
 
 const Cart = () => {
