@@ -5,6 +5,10 @@ import { useCart } from 'contexts/cart-context';
 
 import * as S from './style';
 
+const shippingValue = 7.0;
+const taxValue = 1.99;
+const handlingValue = 2.33;
+
 const Cart = () => {
   const { products, total, isOpen, openCart, closeCart } = useCart();
 
@@ -52,7 +56,7 @@ const Cart = () => {
           <S.CartFooter>
             <S.Sub>SHIPPING</S.Sub>
             <S.SubPrice>
-              <S.SubPriceValue>5.99</S.SubPriceValue>
+              <S.SubPriceValue>{shippingValue + handlingValue}</S.SubPriceValue>
             </S.SubPrice>
             <S.Sub>SUBTOTAL</S.Sub>
             <S.SubPrice>
