@@ -7,6 +7,7 @@ import * as S from './style';
 
 const shippingValue = 7.0;
 const taxValue = 1.99;
+
 const handlingValue = 2.33;
 
 const Cart = () => {
