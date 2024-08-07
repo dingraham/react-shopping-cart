@@ -10,7 +10,7 @@ const useCartTotal = () => {
         sum += product.quantity;
         return sum;
       },
-      0
+      0,
     );
 
     const totalPrice = products.reduce((sum: number, product: ICartProduct) => {
@@ -24,7 +24,7 @@ const useCartTotal = () => {
           product.installments > greater ? product.installments : greater;
         return greater;
       },
-      0
+      0,
     );
 
     const total = {

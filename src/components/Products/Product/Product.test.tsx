@@ -9,7 +9,7 @@ describe('[components] - Product', () => {
     return renderWithThemeProvider(
       <CartProvider>
         <Product product={mockCartProducts[0]} {...props} />
-      </CartProvider>
+      </CartProvider>,
     );
   };
 

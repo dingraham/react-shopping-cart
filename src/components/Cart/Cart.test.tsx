@@ -8,7 +8,7 @@ describe('[components] - Cart', () => {
     return renderWithThemeProvider(
       <CartProvider>
         <Cart />
-      </CartProvider>
+      </CartProvider>,
     );
   };
 

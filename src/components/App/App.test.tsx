@@ -11,7 +11,7 @@ describe('[components] - App', () => {
         <CartProvider>
           <App />
         </CartProvider>
-      </ProductsProvider>
+      </ProductsProvider>,
     );
   };
 

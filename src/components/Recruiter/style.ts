@@ -1,9 +1,8 @@
-import styled from 'styled-components/macro';
-import flag from './nl-flag.png';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #fff5ee;
   border: 2px solid #eee;
   border-radius: 4px;
   position: fixed;
@@ -38,17 +37,6 @@ export const Thumbnail = styled.div`
   }
 `;
 
-export const Flag = styled.span`
-  display: inline-block;
-  background-image: url(${flag});
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  margin-left: 4px;
-`;
-
 export const Description = styled.div`
   padding: 10px 10px 0 0px;
   width: 80%;
@@ -58,9 +46,8 @@ export const Description = styled.div`
     padding: 10px 5px 0 0px;
   }
 
-  h4 {
-    font-size: 12px;
-    margin: 0;
+  h3 {
+    font-size: 20px;
   }
 
   p {

@@ -10,9 +10,7 @@ interface IProps {
 const Products = ({ products }: IProps) => {
   return (
     <S.Container>
-      {products?.map((p) => (
-        <Product product={p} key={p.sku} />
-      ))}
+      {products?.map((p) => <Product product={p} key={p.sku} />)}
     </S.Container>
   );
 };

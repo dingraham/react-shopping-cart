@@ -17,14 +17,14 @@ const useProductsContext = (): IProductsContext => {
 
   if (!context) {
     throw new Error(
-      'useProductsContext must be used within a ProductsProvider'
+      'useProductsContext must be used within a ProductsProvider',
     );
   }
 
   return context;
 };
 
-const ProductsProvider: FC = (props) => {
+const ProductsProvider = (props: any) => {
   const [isFetching, setIsFetching] = useState(false);
   const [products, setProducts] = useState<IProduct[]>([]);
   const [filters, setFilters] = useState<string[]>([]);

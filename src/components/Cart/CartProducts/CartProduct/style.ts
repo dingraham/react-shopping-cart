@@ -1,11 +1,13 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
   box-sizing: border-box;
   padding: 5%;
 
-  transition: background-color 0.2s, opacity 0.2s;
+  transition:
+    background-color 0.2s,
+    opacity 0.2s;
 
   &::before {
     content: '';

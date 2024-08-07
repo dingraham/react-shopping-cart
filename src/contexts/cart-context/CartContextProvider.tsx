@@ -29,7 +29,7 @@ const totalInitialValues = {
   currencyFormat: '$',
 };
 
-const CartProvider: FC = (props) => {
+const CartProvider = (props: any) => {
   const [isOpen, setIsOpen] = useState(false);
   const [products, setProducts] = useState<ICartProduct[]>([]);
   const [total, setTotal] = useState<ICartTotal>(totalInitialValues);

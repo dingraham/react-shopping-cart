@@ -9,7 +9,7 @@ describe('[components] - Filter', () => {
     return renderWithThemeProvider(
       <ProductsProvider>
         <Filter />
-      </ProductsProvider>
+      </ProductsProvider>,
     );
   };
 
