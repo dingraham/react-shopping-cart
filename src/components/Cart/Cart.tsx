@@ -12,8 +12,7 @@ const shippingValue = 7.0;
 
 
 
-
-        
+    
 
 const handlingValue = 2.33;
 
