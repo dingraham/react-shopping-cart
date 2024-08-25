@@ -6,16 +6,6 @@ import { useCart } from 'contexts/cart-context';
 import * as S from './style';
 
 const shippingValue = 7.0;
-const taxValue = 1.99;
-
-
-
-
-
-
-
-
-
 const handlingValue = 2.33;
 
 const Cart = () => {
@@ -43,7 +33,7 @@ const Cart = () => {
         {isOpen ? (
           <span>X</span>
         ) : (
-          <S.CartIcon>
+          <S.CartIcon data-test="cart-icon">
             <S.CartQuantity title="Products in cart quantity">
               {total.productQuantity}
             </S.CartQuantity>
@@ -69,7 +59,7 @@ const Cart = () => {
             </S.SubPrice>
             <S.Sub>SUBTOTAL</S.Sub>
             <S.SubPrice>
-              <S.SubPriceValue>{`${total.currencyFormat} ${formatPrice(
+              <S.SubPriceValue data-test="subtotal-label">{`${total.currencyFormat} ${formatPrice(
                 total.totalPrice,
                 total.currencyId,
               )}`}</S.SubPriceValue>
@@ -86,7 +76,11 @@ const Cart = () => {
                 ) : null}
               </S.SubPriceInstallment>
             </S.SubPrice>
-            <S.CheckoutButton onClick={handleCheckout} autoFocus>
+            <S.CheckoutButton
+              onClick={handleCheckout}
+              autoFocus
+              data-test="checkout-button"
+            >
               Checkout
             </S.CheckoutButton>
           </S.CartFooter>
