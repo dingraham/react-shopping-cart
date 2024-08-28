@@ -2,6 +2,10 @@
 const getRandomPercentage = (percentage: number) => Math.random() < percentage;
 
 describe('Flake Examples', () => {
+  it('100 Percent', () => {
+    expect(getRandomPercentage(1)).to.be.true;
+  });
+
   it('90 Percent', () => {
     expect(getRandomPercentage(0.9)).to.be.true;
   });
