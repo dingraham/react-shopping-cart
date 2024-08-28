@@ -17,11 +17,3 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           start: npm start
-      - name: Upload screenshots
-        uses: actions/upload-artifact@v4
-        if: failure()
-        with:
-          name: cypress-screenshots
-          overwrite: true
-          path: cypress/screenshots
-          if-no-files-found: ignore
