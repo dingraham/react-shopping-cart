@@ -10,6 +10,8 @@ import Cart from 'components/Cart';
 import { useProducts } from 'contexts/products-context';
 
 import * as S from './style';
+import CategoryFilter from 'components/CategoryFilter';
+import { FEATURE_FLAGS } from 'utils/featureFlags';
 
 function App() {
   const { isFetching, products, fetchProducts } = useProducts();
@@ -26,6 +28,7 @@ function App() {
       <S.TwoColumnGrid>
         <S.Side>
           <Filter />
+          {FEATURE_FLAGS.showCategoryFilter && <CategoryFilter />}
         </S.Side>
         <S.Main>
           <S.MainHeader>

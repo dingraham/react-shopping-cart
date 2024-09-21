@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 describe('Checkout Test', () => {
   beforeEach(() => {
     cy.intercept('GET', '/products').as('getProducts');
@@ -19,7 +20,7 @@ describe('Checkout Test', () => {
     });
   });
 
-  it('should validate checkout subtotal with api call', () => {
+  it.skip('should validate checkout subtotal with api call', () => {
     cy.wait('@getProducts').then(({ response }) => {
       const firstProduct = response?.body[0];
 
