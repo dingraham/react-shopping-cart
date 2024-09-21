@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 describe('Checkout Test', () => {
   beforeEach(() => {
     cy.intercept('GET', '/products').as('getProducts');
