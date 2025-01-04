@@ -32,7 +32,7 @@
     "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\"",
     "prepare": "husky",
     "cy:open": "cypress open --e2e --browser chrome",
-    "cy:run": "cypress run --e2e --browser chrome --spec cypress/e2e/flake.cy.ts"
+    "cy:run": "cypress run --e2e --browser chrome --spec cypress/e2e/checkout.cy.ts"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -58,18 +58,6 @@
   "lint-staged": {
     "*.{js,json,css,md}": [
       "prettier --write"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   },
   "devDependencies": {

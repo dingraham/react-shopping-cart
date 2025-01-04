@@ -24,7 +24,7 @@ function App() {
     <S.Container>
       {isFetching && <Loader />}
       <GithubCorner />
-      <Recruiter />
+      {/* <Recruiter /> */}
       <S.TwoColumnGrid>
         <S.Side>
           <Filter />
