@@ -2,7 +2,7 @@ import { useProducts } from 'contexts/products-context';
 
 import * as S from './style';
 
-export const availableSizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
+export const availableSizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
 const Filter = () => {
   const { filters, filterProducts } = useProducts();
