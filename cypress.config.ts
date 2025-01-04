@@ -5,6 +5,9 @@ export default defineConfig({
   e2e: {
     baseUrl: 'http://localhost:3000/',
     reporter: 'mochawesome',
+    retries: {
+      runMode: 2,
+    },
     reporterOptions: {
       reportDir: 'results',
       overwrite: false,

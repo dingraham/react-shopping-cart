@@ -1,5 +1,5 @@
 import { KeyboardEvent } from 'react';
-
+import React from 'react';
 import formatPrice from 'utils/formatPrice';
 import { IProduct } from 'models';
 
@@ -53,7 +53,12 @@ const Product = ({ product }: IProps) => {
   };
 
   return (
-    <S.Container onKeyUp={handleAddProductWhenEnter} sku={sku} tabIndex={1}>
+    <S.Container
+      onKeyUp={handleAddProductWhenEnter}
+      sku={sku}
+      tabIndex={1}
+      data-test="product-card"
+    >
       {isFreeShipping && <S.Stopper>Free shipping</S.Stopper>}
       <S.Image alt={title} />
       <S.Title>{title}</S.Title>

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 
 interface IProps {
@@ -22,7 +23,7 @@ const Checkbox = ({ className, label, handleOnChange }: IProps) => {
           value={label}
           checked={isChecked}
           onChange={toggleCheckboxChange}
-          data-testid="checkbox"
+          data-test={`${label}-checkbox`}
         />
 
         <span className="checkmark">{label}</span>

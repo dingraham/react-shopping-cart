@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
-
+import React from 'react';
 import Loader from 'components/Loader';
 import { GithubCorner } from 'components/Github';
-import Recruiter from 'components/Recruiter';
 import Filter from 'components/Filter';
 import Products from 'components/Products';
 import Cart from 'components/Cart';
